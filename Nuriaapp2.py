@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-import sklearn
+!pip install scikit-learn==1.2.2
 
 
 st.write(sklearn.__version__)
