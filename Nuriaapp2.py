@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-import sklearn
+
 
 
 # To load the model back
 model_filename = 'rf_search.sav'
-#loaded_rf_search = pickle.load(open(model_filename, mode='rb'))
+loaded_rf_search = pickle.load(open(model_filename, mode='rb'))
 
-st.write('The scikit-learn version is {}.'.format(sklearn.__version__))
+
 
 
 # Symptoms
@@ -55,7 +55,7 @@ for symptom in selected_symptoms:
 df_user
 
 # Make a prediction
-#prediction = loaded_rf_search.predict(df_user)
+prediction = loaded_rf_search.predict(df_user)
 
 # Display the prediction
-#st.write("The predicted probability of the disease is:", prediction)
+st.write("The predicted probability of the disease is:", prediction)
