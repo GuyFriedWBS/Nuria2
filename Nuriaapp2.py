@@ -5,7 +5,7 @@ import numpy as np
 import sklearn
 
 
-
+st.write(sklearn.__version__)
 # To load the model back
 model_filename = 'rf_search.sav'
 loaded_rf_search = pickle.load(open(model_filename, mode='rb'))
