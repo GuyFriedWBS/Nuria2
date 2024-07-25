@@ -5,7 +5,7 @@ import numpy as np
 
 
 # To load the model back
-model_filename = 'main/rf_search.sav'
+model_filename = 'rf_search.sav'
 loaded_rf_search = pickle.load(open(model_filename, mode='rb'))
 
 
